@@ -27,6 +27,6 @@ rosrun ublox2rinex ublox_raw_parser
 
 Then open the third terminal, input: rosbag play PATH_OF_YOUR_BAG.bag
 
-Finally you will see a file named rinex_CA_20190828184706.txt inside ~/ublox_ws/
+Finally you will see a file named rinex_CA_20190828184706.obs inside ~/ublox_ws/
 
 That is the rinex file.
