@@ -29,7 +29,7 @@ void epochCallback(const ublox2rinex::RxmRAWX::ConstPtr& msg)
 
     for(int i = 0; i < msg->numMeas; i++)
     {
-		FILE* fp = fopen("rinex_CA_20190828184706.txt", "a");
+		FILE* fp = fopen("rinex_CA_20190828184706.obs", "a");
 		if(i == 0)
 		{
 			fprintf(fp, "> %s%s\n", timestr, flagnumstr);
@@ -54,7 +54,7 @@ void epochCallback(const ublox2rinex::RxmRAWX::ConstPtr& msg)
 int main(int argc, char **argv)
 {
     
-    FILE* fp = fopen("rinex_CA_20190828184706.txt", "w");
+    FILE* fp = fopen("rinex_CA_20190828184706.obs", "w");
     char strversion[64];
     printspace(strversion, 60);
     memcpy(strversion + 5, "3.03", 4);
