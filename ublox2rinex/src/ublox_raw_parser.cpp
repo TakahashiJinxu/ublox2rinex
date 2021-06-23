@@ -1,7 +1,7 @@
 #include <ros/ros.h>
 #include "ublox2rinex/RxmRAWX.h"
 #include <stdio.h>
-#include "../../src/ublox2rinex/include/ublox2rinex/rtklib.h"
+#include "../include/ublox2rinex/rtklib.h"
 void printspace(char* str, int n)
 {
 	for(int i = 0; i < n; i++)
