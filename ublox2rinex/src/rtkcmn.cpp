@@ -1,4 +1,4 @@
-#include "../../src/ublox2rinex/include/ublox2rinex/rtklib.h"
+#include "../include/ublox2rinex/rtklib.h"
 #include <stdio.h>
 
 const static double gpst0[]={1980,1, 6,0,0,0}; /* gps time reference */
